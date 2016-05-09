@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<script>
+	var click_count = 1;
+    var player1_win_count = 0;
+    var player2_win_count = 0;
+	</script>
+
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<img class="img-responsive" src="images/2bimage.jpg "style="width:100%; height:300px;">
+
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+
+			<div id= "player1">
+				<p>PLAYER 1</p>
+			</div>
+			<div id="player1_icon">
+				<img src="images/circle-01.jpg" style="height:100px;width:150px;">
+			</div>
+		</div>
+
+		<div class="col-md-4">
+		<div class="table">	
+		<table cellspacing="10">
+			<tr>
+				<td><button id="one" style="width:100px; height:100px;" onclick="startGame(this.id)">
+					<div id="one-content">
+					</div>
+				    </button>
+			    </td>
+
+			    <td><button id="two" style="width:100px; height:100px;" onclick="startGame(this.id)">
+				    <div id="two-content">
+				    </div>
+			        </button>
+		        </td>
+
+		        <td><button id="three" style="width:100px; height:100px;" onclick="startGame(this.id)">
+			        <div id="three-content">
+			        </div>
+		            </button>
+	            </td>
+	        </tr>	
+
+
+	        <tr>
+	        	<td><button id="four" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        		<div id="four-content">
+	        		</div>
+	        	    </button>
+	        	</td>
+
+	        	<td><button id="five" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        		<div id="five-content">
+	        		</div>
+	        	    </button>
+	        	</td>
+
+	        	<td><button id="six" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        		<div id="six-content">
+	        		</div>
+	        	    </button>
+	        	</td>
+	        </tr>	
+
+
+	        <tr>
+	        	<td><button id="seven" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        		<div id="seven-content">
+	        		</div>
+	        	    </button>
+	            </td>
+
+	            <td><button id="eight" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        	    <div id="eight-content">
+	        	    </div>
+	                </button>
+	            </td>
+
+	            <td><button id="nine" style="width:100px; height:100px;" onclick="startGame(this.id)">
+	        	    <div id="nine-content">
+	        	    </div>
+	                </button>
+	            </td>
+	        </tr>	
+
+	    </table>
+	</div>
+	    </div>
+	    <div class="col-md-4">
+
+	    	<div id= "player2">
+	    		<p>PLAYER 2</p>
+	    	</div>
+	    	<div id="player2_icon">
+	    		<img src="images/cross-01.jpg" style="height:100px;width:150px;">
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<div id="viewscores">
+				<button id="scores" onclick="showScore()" style="height:40px; width:140px; font-size:20px; color:#336666;"> View Scores
+				</button>
+			</div>
+
+			<div id="resetBoxes">
+				<button id ="reset" onclick="resetBoxes()" style="height:40px; width:140px; font-size:20px; color:#336666;"> New Game
+				</button>
+			</div>
+
+			<div id="winner">
+			</div>
+
+			<div id="tie">
+			</div>	
+
+			<div id="show-scores-player1">
+			</div>
+
+			<div id="show-scores-player2">
+			</div>
+
+			<div id="techniques-link">
+				<a href="techniques.html">Click here to check out some cool tips and tricks</a>
+			</div>	
+
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+
+</body>
+</html>
